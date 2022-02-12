@@ -4,5 +4,5 @@
 # In[1]:
 
 
-from C5_common_libraries.C5_JP_MP_Automation import EA
+from C5_common_libraries.C5_common_libraries import EA
 
