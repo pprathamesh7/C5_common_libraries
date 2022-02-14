@@ -28,7 +28,7 @@ class EA:
                     Value = driver.find_element_by_xpath(xpath).text
                     print(Value)
                 except Exception as e:
-                    Value = 'Element not found : ' + e
+                    Value = 'Element not found : ' + str(e)
             #
             #Dict_2 creation key:e, value: Value
         
