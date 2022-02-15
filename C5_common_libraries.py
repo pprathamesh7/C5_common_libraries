@@ -12,7 +12,6 @@ class EA:
     3) Dict : Input in the form of a dictionary where keys are name of the element and values are their respective xpaths
     """
     def Element_action(driver,action,Dict):
-        import exception
 
         element_names = list(Dict.keys())
         List_of_values = []
@@ -27,7 +26,7 @@ class EA:
                 try:
                     Value = driver.find_element_by_xpath(xpath).text
                     print(Value)
-                except Exception as e:
+                except:
                     Value = 'Element not found : ' + str(e)
             #
             #Dict_2 creation key:e, value: Value
